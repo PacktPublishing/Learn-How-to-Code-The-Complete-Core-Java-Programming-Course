@@ -1,0 +1,15 @@
+package inheritance;
+
+public class Hotel_Booking extends Travel_Booking {
+	String hotel_Rating;
+	
+	public Hotel_Booking(String beginDate, String endDate, String destination, String hotel_Rating) {
+		super(beginDate, endDate, destination);
+		this.hotel_Rating = hotel_Rating;
+	}
+
+	public void bookHotel() {
+		System.out.println("Hotel booked at " + destination + " from " + beginDate + " to " + endDate);
+		super.doThis();
+	}
+}

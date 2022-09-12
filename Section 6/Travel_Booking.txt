@@ -1,0 +1,19 @@
+package inheritance;
+
+public class Travel_Booking {
+
+	String beginDate;
+	String endDate;
+	String destination;
+	
+	public Travel_Booking(String beginDate,String endDate,String destination) {
+		this.beginDate = beginDate;
+		this.endDate = endDate;
+		this.destination = destination;
+	}
+	
+	public void doThis() {
+		System.out.println("I am doing this");
+	}
+	
+}

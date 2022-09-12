@@ -1,0 +1,12 @@
+package inheritance;
+
+public class Travel_Main {
+
+	public static void main(String[] args) {
+		
+		Hotel_Booking h1 = new Hotel_Booking("12-12-2020", "12-31-2020", "Las Vegas", "5 Star");
+		
+		h1.bookHotel();
+	}
+
+}
