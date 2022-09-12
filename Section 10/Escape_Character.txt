@@ -1,0 +1,30 @@
+package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Escape_Character {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Escape character (\) specifies the next character 
+		 * as either a special character, a literal
+		 */
+		
+		String str1 = "Q_How are you? I am doing good! Thank you. Q_Where are you from? I am from Atlanta."
+				+ "Q_What do you do? I teach computer programming. ";
+		
+		String patt = "Q_.*?\\?";
+		
+		Pattern p = Pattern.compile(patt);
+		
+		Matcher m = p.matcher(str1);
+		
+		while(m.find()) {
+			System.out.println(m.group());
+		}
+		
+	}
+
+}
