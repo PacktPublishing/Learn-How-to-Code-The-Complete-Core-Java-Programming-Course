@@ -1,0 +1,55 @@
+package text_files;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+
+public class Read_Text_File {
+
+	public static void main(String[] args) throws IOException {
+
+		/*
+		 * Working with Text Files using Apache Commons IO
+		 * 
+		 * 1. Download Apache Commons IO from:
+		 * https://commons.apache.org/proper/commons-io/download_io.cgi 2. Add Commons
+		 * IO jar files to Java Build Path 3. Use FileUtils from commons-io to read a
+		 * text file
+		 */
+
+		File file = new File("/Users/mayurdeshmukh/Documents/TextFiles/File1.txt");
+
+		String x = FileUtils.readFileToString(file, "UTF-8");
+
+		System.out.println(x);
+		
+		List<String> list = FileUtils.readLines(file,"UTF-8");
+		
+		System.out.println(list);
+
+	}
+
+}
+
+Okay, I just opened up registration for 
+my Selenium WebDriver Coaching Program.
+
+CLICK HERE for Selenium WebDriver Coaching Program
+
+(I opened it up a bit early to avoid any
+bottlenecks and spread the load on the server.)
+
+Best regards,
+Mayur
+
+P.S. Remember...you don't need to panic.
+I don't expect to sell out immediately.
+However, if you want one of those spots 
+at my Selenium Live Workshop, then please
+don't delay. They are going to go fast. 
+Here's the link:
+
+CLICK HERE for Selenium WebDriver Coaching Program
+ 
